@@ -5,19 +5,19 @@ package study.chenda.Singleton;
  */
 
 public class Singleton4 {
-	private static class Singleton4Holder{
-		
-		private static final Singleton4 instance=new Singleton4();
-	}
-	
-	private Singleton4(){
-		
-	}
+    private Singleton4() {
 
-	public static Singleton4 getinstance(){
-		return Singleton4Holder.instance;
-		
-	}
-	
-	
+    }
+
+    public static Singleton4 getinstance() {
+        return Singleton4Holder.instance;
+
+    }
+
+    private static class Singleton4Holder {
+
+        private static final Singleton4 instance = new Singleton4();
+    }
+
+
 }
